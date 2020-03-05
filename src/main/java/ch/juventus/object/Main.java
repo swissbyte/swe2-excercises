@@ -15,7 +15,13 @@ public class Main
         a.setLastName("Hans");
         b.setLastName("Hans");
 
-        if(a.equals(b)) System.out.println("yes");
+        System.out.println(a.equals(b));
+
+        if(a.equals(b))
+        {
+            System.out.println("yes");
+        }
+
         System.out.println(a.hashCode());
 
         address.setStreet("Lindenweg");

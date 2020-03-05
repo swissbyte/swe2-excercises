@@ -18,12 +18,8 @@ public class MathUtils
      */
     public double addition(List<Double> numbers)
     {
-        double tmpValue = 0;
-        /*
-        while(numbers.hasNext())
-        {
-            tmpValue += numbers.next();
-        }*/
+        double tmpValue = numbers.stream().mapToDouble(number -> number).sum();
+
         return tmpValue;
     }
 
@@ -35,7 +31,7 @@ public class MathUtils
      * @version 1.0
      * @since   2014-03-31
      */
-    public double  subtraction(double a, double b)
+    public double  substraction(double a, double b)
     {
         return a - b;
     }
