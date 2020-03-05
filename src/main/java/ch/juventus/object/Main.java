@@ -9,6 +9,15 @@ public class Main
         Person person = new Person();
         Address address = new Address();
 
+        Person a = new Person();
+        Person b = new Person();
+
+        a.setLastName("Hans");
+        b.setLastName("Hans");
+
+        if(a.equals(b)) System.out.println("yes");
+        System.out.println(a.hashCode());
+
         address.setStreet("Lindenweg");
         address.setNumber(6);
         address.setZip(6345);
