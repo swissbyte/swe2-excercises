@@ -2,23 +2,28 @@ package ch.juventus.javadoc;
 
 import java.util.List;
 
+/**
+ *
+ * @author C. Hediger
+ * @version 1.0
+ * @since 27.02.2020
+ */
 public class MathUtils
 {
     /**
-     * The HelloWorld program implements an application that
-     * simply displays "Hello World!" to the standard output.
+     * This method adds all the given numbers to a total
      *
-     * @author  Zara Ali
-     * @version 1.0
-     * @since   2014-03-31
+     * @param numbers a list, containing all numbers
+     * @return The sum of all given numbers
      */
     public double addition(List<Double> numbers)
     {
         double tmpValue = 0;
+        /*
         while(numbers.hasNext())
         {
             tmpValue += numbers.next();
-        }
+        }*/
         return tmpValue;
     }
 
